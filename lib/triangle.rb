@@ -9,20 +9,9 @@ class Triangle
     @sides = []
   end
 
-  def negative?
-    if [@a, @b, @c].all? {|side| side > 0}
-      return true
-    else
-      raise TriangleError
-    end
-  end
-
   def valid?
-    if @a + @b > @c && @a + @c > @b && @b + @c > @a
-      return true
-    else
-      raise TriangleError
-    end
+    valid = @a, @b, @c].all? {|side| side > 0}
+    valid && @a + @b > @c && @a + @c > @b && @b + @c > @a
   end
 
   def kind
@@ -32,7 +21,7 @@ class Triangle
       return :scalene
     elsif a == b || a == c || b == c
       return :isosceles
-    else
+    elsif !valid?
       raise TriangleError
     end
   end
