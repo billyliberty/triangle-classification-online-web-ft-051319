@@ -11,7 +11,7 @@ class Triangle
 
   def valid?
     positive = [@a, @b, @c].all? {|side| side > 0}
-    positive && (@a+@b > @c) && (@a+@c > @b) && (@b+@c > @a)
+    positive && (@a + @b > @c) && (@a + @c > @b) && (@b + @c > @a)
   end
 
   def kind
