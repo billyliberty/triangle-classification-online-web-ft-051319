@@ -25,6 +25,10 @@ class Triangle
     a.positive? && b.positive? && c.positive?
   end
 
+  def valid?
+    a + b > c && a + c > b && b + c > a
+  end
+
 
 
   class TriangleError < StandardError
