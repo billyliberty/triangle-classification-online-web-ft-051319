@@ -16,7 +16,7 @@ class Triangle
       return :scalene
     elsif a == b || a == c || b == c
       return :isosceles
-    elsif valid? == false || negative? == true
+    elsif valid? == true || negative? == true
       raise TriangleError
     end
   end
