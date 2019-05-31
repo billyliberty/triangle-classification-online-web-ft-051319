@@ -17,8 +17,7 @@ class Triangle
   def kind
     if !valid?
       raise TriangleError
-    elsif
-      a == b && a == c && b == c
+    elsif a == b && a == c && b == c
       return :equilateral
     elsif a != b && a != c && b != c
       return :scalene
