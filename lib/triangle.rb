@@ -32,7 +32,7 @@ class Triangle
       return :scalene
     elsif a == b || a == c || b == c
       return :isosceles
-    elsif valid? == true || negative? == false
+    else
       raise TriangleError
     end
   end
