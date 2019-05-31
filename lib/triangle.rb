@@ -23,9 +23,9 @@ class Triangle
 
   def negative?
     if a <= 0 || b <= 0 || c <= 0
-      return false
-    else
       return true
+    else
+      return false
     end
   end
 
