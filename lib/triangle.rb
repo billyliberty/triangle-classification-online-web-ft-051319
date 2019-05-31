@@ -10,7 +10,7 @@ class Triangle
   end
 
   def valid?
-    valid = @a, @b, @c].all? {|side| side > 0}
+    valid = [@a, @b, @c].all? {|side| side > 0}
     valid && @a + @b > @c && @a + @c > @b && @b + @c > @a
   end
 
