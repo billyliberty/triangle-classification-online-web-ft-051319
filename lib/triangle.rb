@@ -22,11 +22,7 @@ class Triangle
   end
 
   def negative?
-    if a.positive? && b.positive? && c.positive?
-      return true
-    else
-      return false
-    end
+    a.positive? && b.positive? && c.positive?
   end
 
 
